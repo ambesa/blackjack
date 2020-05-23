@@ -200,16 +200,16 @@ var BlackjackJS = (function() {
 
 				//Rule set
 				if(dealerBlackjack && !playerBlackjack) {
-						this.gameEnded('You lost!');
+						this.gameEnded('   Sorry You lost!');
 						break;
 				} else if(dealerBlackjack && playerBlackjack) {
 						this.gameEnded('Draw!');
 						break;
 				} else if(this.dealer.getScore() > 21 && this.player.getScore() <= 21) {
-						this.gameEnded('You won!');
+						this.gameEnded(' Great You won!');
 						break;
 				} else if(this.dealer.getScore() > this.player.getScore() && this.dealer.getScore() <= 21 && this.player.getScore() < 21) {
-						this.gameEnded('You lost!');
+						this.gameEnded('  Sorry You lost!');
 						break;
 				}
 				//TODO needs to be expanded..

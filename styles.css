@@ -86,11 +86,11 @@ body {
 }
 
 .diamonds, .hearts {
-  color:#E94F37;
+  color:red;
 }
 
 .spades, .clubs {
-  color:#393E41;
+  color:black;
 }
 
 .rank {
